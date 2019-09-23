@@ -22,7 +22,7 @@ static final int height=1000;
 		//   colors[i][j] = new Color(i % 256, (i * j) % 256, j % 256);
 		for(int i = 0;i<array.length;i++) {
 			for(int j = 0;j<array[i].length;j++) {
-				array[i][j] = new Color( (j%432)%256,(i*j+140)%256 , (j*2*i+27)%256);
+				array[i][j] = new Color( (j*432+i)%256,(i*j+140)%256 , (j*2*i+27)%256);
 			}
 			
 		}
